@@ -1,0 +1,4 @@
+E:\MyGitProject\Calendar\Calendar\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csprojAssemblyReference.cache
+E:\MyGitProject\Calendar\Calendar\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.AssemblyInfoInputs.cache
+E:\MyGitProject\Calendar\Calendar\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.AssemblyInfo.cs
+E:\MyGitProject\Calendar\Calendar\ApplicationLayer\obj\Debug\netcoreapp3.1\ApplicationLayer.csproj.CoreCompileInputs.cache

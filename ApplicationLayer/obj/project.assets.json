@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
-      "ApplicationLayer/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/ApplicationLayer.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ApplicationLayer.dll": {}
-        }
-      }
-    }
+    ".NETCoreApp,Version=v3.1": {}
   },
-  "libraries": {
-    "ApplicationLayer/1.0.0": {
-      "type": "project",
-      "path": "../ApplicationLayer/ApplicationLayer.csproj",
-      "msbuildProject": "../ApplicationLayer/ApplicationLayer.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
-      "ApplicationLayer >= 1.0.0"
-    ]
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "C:\\Users\\Mishka\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\Calendar.csproj",
-      "projectName": "Calendar",
-      "projectPath": "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\Calendar.csproj",
+      "projectUniqueName": "E:\\MyGitProject\\Calendar\\Calendar\\ApplicationLayer\\ApplicationLayer.csproj",
+      "projectName": "ApplicationLayer",
+      "projectPath": "E:\\MyGitProject\\Calendar\\Calendar\\ApplicationLayer\\ApplicationLayer.csproj",
       "packagesPath": "C:\\Users\\Mishka\\.nuget\\packages\\",
-      "outputPath": "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\obj\\",
+      "outputPath": "E:\\MyGitProject\\Calendar\\Calendar\\ApplicationLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mishka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,11 +32,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {
-            "E:\\MyGitProject\\Calendar\\Calendar\\ApplicationLayer\\ApplicationLayer.csproj": {
-              "projectPath": "E:\\MyGitProject\\Calendar\\Calendar\\ApplicationLayer\\ApplicationLayer.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

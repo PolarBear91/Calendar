@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mishka\\Desktop\\Календарь\\Calendar\\Calendar.csproj": {}
+    "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\Calendar.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mishka\\Desktop\\Календарь\\Calendar\\Calendar.csproj": {
+    "E:\\MyGitProject\\Calendar\\Calendar\\ApplicationLayer\\ApplicationLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mishka\\Desktop\\Календарь\\Calendar\\Calendar.csproj",
-        "projectName": "Calendar",
-        "projectPath": "C:\\Users\\Mishka\\Desktop\\Календарь\\Calendar\\Calendar.csproj",
+        "projectUniqueName": "E:\\MyGitProject\\Calendar\\Calendar\\ApplicationLayer\\ApplicationLayer.csproj",
+        "projectName": "ApplicationLayer",
+        "projectPath": "E:\\MyGitProject\\Calendar\\Calendar\\ApplicationLayer\\ApplicationLayer.csproj",
         "packagesPath": "C:\\Users\\Mishka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mishka\\Desktop\\Календарь\\Calendar\\obj\\",
+        "outputPath": "E:\\MyGitProject\\Calendar\\Calendar\\ApplicationLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mishka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,6 +27,62 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\Calendar.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\Calendar.csproj",
+        "projectName": "Calendar",
+        "projectPath": "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\Calendar.csproj",
+        "packagesPath": "C:\\Users\\Mishka\\.nuget\\packages\\",
+        "outputPath": "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mishka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\MyGitProject\\Calendar\\Calendar\\ApplicationLayer\\ApplicationLayer.csproj": {
+                "projectPath": "E:\\MyGitProject\\Calendar\\Calendar\\ApplicationLayer\\ApplicationLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
