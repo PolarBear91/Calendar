@@ -5,11 +5,24 @@
       "ApplicationLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DomainLayer": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ApplicationLayer.dll": {}
         },
         "runtime": {
           "bin/placeholder/ApplicationLayer.dll": {}
+        }
+      },
+      "DomainLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DomainLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DomainLayer.dll": {}
         }
       }
     }
@@ -19,6 +32,11 @@
       "type": "project",
       "path": "../ApplicationLayer/ApplicationLayer.csproj",
       "msbuildProject": "../ApplicationLayer/ApplicationLayer.csproj"
+    },
+    "DomainLayer/1.0.0": {
+      "type": "project",
+      "path": "../DomainLayer/DomainLayer.csproj",
+      "msbuildProject": "../DomainLayer/DomainLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -32,9 +50,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\Calendar.csproj",
-      "projectName": "Calendar",
-      "projectPath": "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\Calendar.csproj",
+      "projectUniqueName": "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\PresentationLayer.csproj",
+      "projectName": "PresentationLayer",
+      "projectPath": "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\PresentationLayer.csproj",
       "packagesPath": "C:\\Users\\Mishka\\.nuget\\packages\\",
       "outputPath": "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\obj\\",
       "projectStyle": "PackageReference",

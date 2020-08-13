@@ -14,35 +14,34 @@ namespace Calendar
             Console.WriteLine("Please enter year:");
             int year = int.Parse(Console.ReadLine());
 
-            if (day >= 32 || month >= 13 || (year >= 2400 || year <= 1600))
+            if (day >= 32 || month >= 13 || (year >= 2400 || year <= 1600))       //Validate of date.
             {
-                Console.WriteLine();
-                Console.WriteLine("Not correct date.Please try again... ");
+                Console.WriteLine("\n Not correct date.Please try again... ");
                 Console.ReadKey();
                 Console.Clear();
                 Main();
             }
 
-            int selectedDay = day;
-            var dt = new DateTime(year, month, 1);
-            DateTime SelectedDt;
-            int countOfDays = System.DateTime.DaysInMonth(dt.Year, dt.Month);
+            // List of varriable for building calendar table
 
-            try
-            {
-                SelectedDt = new DateTime(year, month, day);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine();
-                Console.WriteLine(e.Message);
-                Console.WriteLine("To continue press enter...");
-                Console.ReadKey();
-                Console.Clear();
-                Main();
-            }
+            DateTime firstDayOfCurrentMonth = new DateTime(year, month, 1);
+            int countOfDays = System.DateTime.DaysInMonth(firstDayOfCurrentMonth.Year, firstDayOfCurrentMonth.Month);
+            DateTime selectedDate = new DateTime(year, month, day);    
+            
+            //Varible "newTable" contain arrays-horisontal string of calendar.
 
-            TableBuilder.Build(dt);
+            var newTable = TableBuilder.Build(firstDayOfCurrentMonth, countOfDays);      
+            
+            //This call of method printing array to console.
+
+            Output.Print(newTable, day, month, year);
+
+            //Try again...
+          
+            Console.WriteLine("\n\n To continue press enter...");
+            Console.ReadKey();
+            Console.Clear();
+            Main();
         }
     }
 }

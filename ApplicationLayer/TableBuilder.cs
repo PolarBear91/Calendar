@@ -1,66 +1,55 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ApplicationLayer
 {
     public class TableBuilder
-    {
-        public static void Build(DateTime dt)
+    {       
+        public static Arrays Build(DateTime dt, int countOfDays)
         {
-            int[] monday = new int[6];
-            int[] tuesday = new int[6];
-            int[] wednesday = new int[6];
-            int[] thursday = new int[6];
-            int[] friday = new int[6];
-            int[] saturday = new int[6];
-            int[] sunday = new int[6];
-
+            Arrays newTable = new Arrays();
             int counter = 0;
-            bool isSundayDone = false;
-
+            bool isSundayDone = false ;
 
             while (counter != 7 || counter < 7)
             {
-                if ((int)dt.DayOfWeek + counter == 1 || (sunday[0] != 0 && monday[0] == 0))
+                if ((int)dt.DayOfWeek + counter == 1 || (newTable.sunday[0] != 0 && newTable.monday[0] == 0))
                 {
-                    Fill(monday, ++counter);
+                    TableFill.Fill(newTable.monday, ++counter, isSundayDone, countOfDays);
                 }
 
-                if ((int)dt.DayOfWeek + counter == 2 || (sunday[0] != 0 && tuesday[0] == 0))
+                if ((int)dt.DayOfWeek + counter == 2 || (newTable.sunday[0] != 0 && newTable.tuesday[0] == 0))
                 {
-                    Fill(tuesday, ++counter);
+                    TableFill.Fill(newTable.tuesday, ++counter, isSundayDone, countOfDays);
                 }
 
-                if ((int)dt.DayOfWeek + counter == 3 || (sunday[0] != 0 && wednesday[0] == 0))
+                if ((int)dt.DayOfWeek + counter == 3 || (newTable.sunday[0] != 0 && newTable.wednesday[0] == 0))
                 {
-                    Fill(wednesday, ++counter);
+                    TableFill.Fill(newTable.wednesday, ++counter, isSundayDone, countOfDays);
                 }
 
-                if ((int)dt.DayOfWeek + counter == 4 || (sunday[0] != 0 && thursday[0] == 0))
+                if ((int)dt.DayOfWeek + counter == 4 || (newTable.sunday[0] != 0 && newTable.thursday[0] == 0))
                 {
-                    Fill(thursday, ++counter);
+                    TableFill.Fill(newTable.thursday, ++counter, isSundayDone, countOfDays);
                 }
 
-                if ((int)dt.DayOfWeek + counter == 5 || (sunday[0] != 0 && friday[0] == 0))
+                if ((int)dt.DayOfWeek + counter == 5 || (newTable.sunday[0] != 0 && newTable.friday[0] == 0))
                 {
-                    Fill(friday, ++counter);
+                    TableFill.Fill(newTable.friday, ++counter, isSundayDone, countOfDays);
                 }
 
-                if ((int)dt.DayOfWeek + counter == 6 || (sunday[0] != 0 && saturday[0] == 0))
+                if ((int)dt.DayOfWeek + counter == 6 || (newTable.sunday[0] != 0 && newTable.saturday[0] == 0))
                 {
-                    Fill(saturday, ++counter);
+                    TableFill.Fill(newTable.saturday, ++counter, isSundayDone, countOfDays);
                 }
 
-                if (((int)dt.DayOfWeek + counter == 0 || (int)dt.DayOfWeek + counter == 7) && (sunday[0] == 0))
+                if (((int)dt.DayOfWeek + counter == 0 || (int)dt.DayOfWeek + counter == 7) && (newTable.sunday[0] == 0))
                 {
-                    Fill(sunday, ++counter);
+                    TableFill.Fill(newTable.sunday, ++counter, isSundayDone, countOfDays);
                     isSundayDone = true;
                 }
-            
-
             }
 
+            return newTable;          
         }
     }
 }

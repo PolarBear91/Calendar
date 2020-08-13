@@ -1,0 +1,8 @@
+E:\MyGitProject\Calendar\Calendar\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.AssemblyInfoInputs.cache
+E:\MyGitProject\Calendar\Calendar\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.AssemblyInfo.cs
+E:\MyGitProject\Calendar\Calendar\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.csproj.CoreCompileInputs.cache
+E:\MyGitProject\Calendar\Calendar\DomainLayer\bin\Debug\netcoreapp3.1\DomainLayer.deps.json
+E:\MyGitProject\Calendar\Calendar\DomainLayer\bin\Debug\netcoreapp3.1\DomainLayer.dll
+E:\MyGitProject\Calendar\Calendar\DomainLayer\bin\Debug\netcoreapp3.1\DomainLayer.pdb
+E:\MyGitProject\Calendar\Calendar\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.dll
+E:\MyGitProject\Calendar\Calendar\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.pdb

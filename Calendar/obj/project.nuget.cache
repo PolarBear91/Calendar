@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6+gOPHlQWEKC6X1WRIh5O2R2KaQNPTFEwYB+bjmUVaehd0pFDQ75G56spG7jmcLHC4vSjYRBidt9MVJCT2roTg==",
+  "dgSpecHash": "huwzRQ2YuvXrBFIM524giagMevCv1aqR/gBWZVXJEnKjD78ZipIN0aMOGMR6y+UUKLFaJ250qA/0m+W5QDJgTg==",
   "success": true,
-  "projectFilePath": "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\Calendar.csproj",
+  "projectFilePath": "E:\\MyGitProject\\Calendar\\Calendar\\Calendar\\PresentationLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
