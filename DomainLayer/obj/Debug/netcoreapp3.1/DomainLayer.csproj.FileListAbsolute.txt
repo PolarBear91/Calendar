@@ -6,3 +6,4 @@ E:\MyGitProject\Calendar\Calendar\DomainLayer\bin\Debug\netcoreapp3.1\DomainLaye
 E:\MyGitProject\Calendar\Calendar\DomainLayer\bin\Debug\netcoreapp3.1\DomainLayer.pdb
 E:\MyGitProject\Calendar\Calendar\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.dll
 E:\MyGitProject\Calendar\Calendar\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.pdb
+E:\MyGitProject\Calendar\Calendar\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.csprojAssemblyReference.cache

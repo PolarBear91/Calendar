@@ -5,36 +5,9 @@ namespace Calendar
 {
     class Output
     {
-
         public static void Print(Arrays newTable, int day, int month, int year)
         {
-            Console.Clear();
-            Console.WriteLine("Your date is : {0}.{1}.{2} \n", day, month, year);
-
-            Console.WriteLine(@"Monday     ");
-            CheckedCurentDay(newTable.monday);
-
-            Console.WriteLine(@"Tuesday     ");
-            CheckedCurentDay(newTable.tuesday);
-
-            Console.WriteLine(@"Wednesday     ");
-            CheckedCurentDay(newTable.wednesday);
-
-            Console.WriteLine(@"Thursday     ");
-            CheckedCurentDay(newTable.thursday);
-
-            Console.WriteLine(@"Friday     ");
-            CheckedCurentDay(newTable.friday);
-
-            Console.WriteLine(@"Saturday     ");
-            CheckedCurentDay(newTable.saturday);
-
-            Console.WriteLine(@"Sunday     ");
-            CheckedCurentDay(newTable.sunday);
-
-            
-
-            void CheckedCurentDay(int[] arr)    
+            void CheckedCurrentDay(int[] arr)
             {
                 foreach (var v in arr)
                 {
@@ -69,7 +42,32 @@ namespace Calendar
                         }
                     }
                 }
+                Console.WriteLine();
             }
+
+            Console.Clear();
+            Console.WriteLine("Your date is : {0}.{1}.{2} \n", day, month, year);
+
+            Console.Write(@"Monday    ");
+            CheckedCurrentDay(newTable.monday);
+
+            Console.Write(@"Tuesday   ");
+            CheckedCurrentDay(newTable.tuesday);
+
+            Console.Write(@"Wednesday ");
+            CheckedCurrentDay(newTable.wednesday);
+
+            Console.Write(@"Thursday  ");
+            CheckedCurrentDay(newTable.thursday);
+
+            Console.Write(@"Friday    ");
+            CheckedCurrentDay(newTable.friday);
+
+            Console.Write(@"Saturday  ");
+            CheckedCurrentDay(newTable.saturday);
+
+            Console.Write(@"Sunday    ");
+            CheckedCurrentDay(newTable.sunday);     
         }
     }
 }
