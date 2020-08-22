@@ -7,7 +7,7 @@ namespace ApplicationLayer
 {
     public static class Clean
     {
-        public static void doClear()
+        public static void DoClear()
         {
             Console.ReadKey();
             Console.Clear();

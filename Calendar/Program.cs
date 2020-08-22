@@ -31,14 +31,14 @@ namespace Calendar
                 if (dayDigit >= 32 || monthDigit >= 13 || (yearDigit >= 2400 || yearDigit <= 1600))       //Validate conditions of the task
                 {
                     Console.WriteLine("\n Not correct date. Please try again... ");
-                    Clean.doClear();
+                    Clean.DoClear();
                     Main();
                 }
             }
             else
             {
                 Console.WriteLine("\n Not correct date. Please try again... ");
-                Clean.doClear();
+                Clean.DoClear();
                 Main();
             }
 
@@ -60,7 +60,7 @@ namespace Calendar
             //Try again...
 
             Console.WriteLine("\n To continue press enter...");
-            Clean.doClear();
+            Clean.DoClear();
             Main();
         }
     }
