@@ -11,7 +11,6 @@ namespace ApplicationLayer
         {
             Console.ReadKey();
             Console.Clear();
-          
         }
     }
 }

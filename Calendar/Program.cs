@@ -8,6 +8,8 @@ namespace Calendar
     {
         static void Main()
         {
+            //Taking user's input
+
             Console.WriteLine("Please enter day:");
             string day = Console.ReadLine();
             Console.WriteLine("Please enter month:");
@@ -15,12 +17,12 @@ namespace Calendar
             Console.WriteLine("Please enter year:");
             string year = Console.ReadLine();
 
+            //Validate the values are correct
+
             int number;
             int dayDigit = 0, monthDigit = 0, yearDigit = 0;
 
-            //Validate the values are correct
-
-            if (Int32.TryParse(day, out number) && Int32.TryParse(month, out number) && Int32.TryParse(year, out number))
+            if (Int32.TryParse(day, out number) && Int32.TryParse(month, out number) && Int32.TryParse(year, out number))     //Validate correct type
             {
                 dayDigit = int.Parse(day);
                 monthDigit = int.Parse(month);
@@ -39,25 +41,25 @@ namespace Calendar
                 Clean.doClear();
                 Main();
             }
-         
+
 
             // List of varriable for building calendar table
 
-            DateTime firstDayOfCurrentMonth = new DateTime(yearDigit, monthDigit, 1);
-            int countOfDays = System.DateTime.DaysInMonth(firstDayOfCurrentMonth.Year, firstDayOfCurrentMonth.Month);
+            DateTime firstDayOfCurrentMonth = new DateTime(yearDigit, monthDigit, 1);     // First day of user's month
+            int countOfDays = System.DateTime.DaysInMonth(firstDayOfCurrentMonth.Year, firstDayOfCurrentMonth.Month);    // Count of days in user's mounth
             DateTime selectedDate = new DateTime(yearDigit, monthDigit, dayDigit);
 
-            //Varible "newTable" contain arrays-horisontal string of calendar.
+            //Variable "newTable" contains arrays of days of week
 
             var newTable = TableBuilder.Build(firstDayOfCurrentMonth, countOfDays);
 
-            //This call of method printing array to console.
+            //This call of method printing array to console
 
             Output.Print(newTable, dayDigit, monthDigit, yearDigit);
 
             //Try again...
 
-            Console.WriteLine("\n\n To continue press enter...");
+            Console.WriteLine("\n To continue press enter...");
             Clean.doClear();
             Main();
         }
